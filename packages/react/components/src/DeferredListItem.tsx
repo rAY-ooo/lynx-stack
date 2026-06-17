@@ -4,7 +4,7 @@
 
 import type { FC, ReactNode, RefCallback } from 'react';
 
-import { cloneElement as _cloneElement, useCallback, useRef, useState } from '@lynx-js/react';
+import { preactCloneElement as _cloneElement, useCallback, useRef, useState } from '@lynx-js/react';
 import type { SnapshotInstance } from '@lynx-js/react/internal';
 import { cloneElement as _cloneElementMainThread } from '@lynx-js/react/lepus';
 

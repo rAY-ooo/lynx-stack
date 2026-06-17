@@ -43,6 +43,7 @@ import type { VNode } from 'preact';
 export const Children: ReactLynxChildren;
 
 export { cloneElement }
+export { cloneElement as preactCloneElement }
 
 export { Component }
 

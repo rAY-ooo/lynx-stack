@@ -8,13 +8,13 @@ import {
   Component,
   Fragment,
   PureComponent,
-  cloneElement,
   createContext,
   createRef,
   forwardRef,
   isValidElement,
   lazy,
   memo,
+  cloneElement as preactCloneElement,
   useSyncExternalStore,
 } from 'preact/compat';
 
@@ -32,7 +32,7 @@ import {
   useState,
 } from './core/hooks/react.js';
 import { Children } from './snapshot/lynx/children.js';
-import { createElement } from './snapshot/lynx/element.js';
+import { cloneElement, createElement } from './snapshot/lynx/element.js';
 import { createPortal } from './snapshot/lynx/portals.js';
 import { Suspense } from './snapshot/lynx/suspense.js';
 
@@ -73,6 +73,8 @@ export default {
   Suspense,
   lazy,
   createElement,
+  cloneElement,
+  preactCloneElement,
   createPortal,
 };
 
@@ -87,6 +89,7 @@ export {
   lazy,
   createElement,
   cloneElement,
+  preactCloneElement,
   useSyncExternalStore,
   createPortal,
 };
