@@ -1,5 +1,11 @@
 # @lynx-js/debug-metadata-rsbuild-plugin
 
+## 0.1.2
+
+### Patch Changes
+
+- fix(debug-metadata): bake the release banner inside the bundle wrapper so the background thread registers its release ([#2891](https://github.com/lynx-family/lynx-stack/pull/2891))
+
 ## 0.1.1
 
 ### Patch Changes
